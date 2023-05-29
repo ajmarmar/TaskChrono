@@ -9,14 +9,16 @@ import { TodoItemComponent } from './todo-item/todo-item.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoPageComponent } from './todo-page/todo-page.component';
 import { FiltroPipe } from './filtro.pipe';
-
+import { MaterialModule } from '../material.module';
 
 
 @NgModule({
   declarations: [TodoAddComponent, TodoFooterComponent, TodoItemComponent, TodoListComponent, TodoPageComponent, FiltroPipe],
   imports: [
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
+    MaterialModule
   ],
   exports: [
     TodoPageComponent

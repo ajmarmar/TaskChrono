@@ -14,6 +14,7 @@ import { filtrosValidos } from '../../filtro/filtro.actions';
 export class TodoListComponent implements OnInit {
 
   todos: Todo[] = [];
+  //filtroActual!: filtrosValidos;
   filtroActual!: string;
 
   constructor( private store: Store<AppState> ) { }

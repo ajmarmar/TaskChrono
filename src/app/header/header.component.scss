@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+}
+
+.logo {
+    flex: 1;
+}
+
+.btn_settings {
+    flex: 1;
+    padding-right: 25px;
+}
+
+.imgLogo {
+    /*
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    */
+  max-width: 100%;
+  height: auto;
+  width: 40vw;
+}

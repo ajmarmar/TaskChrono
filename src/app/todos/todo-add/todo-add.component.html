@@ -1,8 +1,11 @@
 <header class="header">
-    <h1>todos</h1>
-    <input class="new-todo"
-           placeholder="¿Qué quieres hacer?"
-           [formControl]="txtInput"
-           (keyup.enter)="agregar()"
-           autofocus>
+
+  <mat-form-field>
+    <mat-label>Tarea</mat-label>
+    <input matInput placeholder="Ex. crear informe" value="">
+  </mat-form-field>
+
+  <input class="new-todo" placeholder="¿Qué quieres hacer?" 
+        [formControl]="txtInput" (keyup.enter)="agregar()" autofocus>
+        
 </header>

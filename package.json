@@ -1,6 +1,6 @@
 {
   "name": "task-chrono",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,15 +11,18 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^16.0.1",
+    "@angular/cdk": "^16.0.1",
     "@angular/common": "^16.0.1",
     "@angular/compiler": "^16.0.1",
     "@angular/core": "^16.0.1",
     "@angular/forms": "^16.0.1",
+    "@angular/material": "^16.0.1",
     "@angular/platform-browser": "^16.0.1",
     "@angular/platform-browser-dynamic": "^16.0.1",
     "@angular/router": "^16.0.1",
     "@ngrx/store": "^16.0.0",
     "@ngrx/store-devtools": "^16.0.0",
+    "@schematics/angular": "^16.0.2",
     "rxjs": "~7.8.1",
     "tslib": "^2.5.0",
     "zone.js": "~0.13.0"

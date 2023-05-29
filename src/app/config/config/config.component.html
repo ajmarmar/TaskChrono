@@ -1,0 +1,42 @@
+<section class="todoapp">
+    <h2>Configuration</h2>
+    <mat-divider></mat-divider>
+    <form class="example-form" #form="ngForm" (ngSubmit)="submitForm(form.form)">
+        <mat-slide-toggle ngModel name="enableScheduler">Enable Scheduler</mat-slide-toggle>
+        <div>
+            <div class="header-week-days">
+                <h3>Days of week</h3>
+                <button mat-flat-button color="primary" class="float-rigth">
+                    <mat-icon>add</mat-icon>
+                    Add new range
+                </button>
+            </div>
+
+
+            <div *ngFor="let d of config.week">
+                <span class="day">
+                    <mat-checkbox [checked]="d.enable">
+                        {{d.day}}
+                    </mat-checkbox>
+                </span>
+                <div *ngFor="let r of d.range" class="hours">
+                    {{ r.from}} - {{ r.to }}
+                </div>
+                <button mat-icon-button color="primary" aria-label="add range">
+                    <mat-icon>add</mat-icon>
+                </button>
+            </div>
+        </div>
+
+
+
+
+        <mat-form-field appearance="fill">
+            <mat-label>Input</mat-label>
+            <input matInput type="time">
+        </mat-form-field>
+
+        <button mat-raised-button type="submit">Save Settings</button>
+
+    </form>
+</section>

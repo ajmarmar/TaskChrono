@@ -1,0 +1,21 @@
+mat-slide-toggle {
+    margin: 8px 0;
+    display: block;
+  }
+
+.hours {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.day {
+  width: 130px;
+  display: inline-block;
+}
+
+.header-week-days {
+  display: flex;
+}
+.header-week-days h3 {
+  flex: 1;
+}
